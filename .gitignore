@@ -1,0 +1,12 @@
+/node_modules
+/typings
+*.map
+.DS_Store
+/.git
+.classpath
+.project
+.springBeans
+/.settings/
+/target
+.mvn/
+mvn*
