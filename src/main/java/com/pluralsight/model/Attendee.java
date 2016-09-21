@@ -5,6 +5,8 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotEmpty;
 
+import com.pluralsight.view.Phone;
+
 public class Attendee {
 	
 	@Size(min=2, max=30)
@@ -13,6 +15,10 @@ public class Attendee {
 	@NotEmpty
 	@Email
 	private String emailAddress;
+	
+	@Phone
+	private String phone;
+	
 	public String getName() {
 		return name;
 	}
@@ -24,6 +30,12 @@ public class Attendee {
 	}
 	public void setEmailAddress(String emailAddress) {
 		this.emailAddress = emailAddress;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 	
 }
