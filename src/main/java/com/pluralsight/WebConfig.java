@@ -9,11 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages="com.pluralsight")
-public class WebConfig extends WebMvcConfigurerAdapter {
-	 
-    @Override
-    public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
-        configurer.enable();
-    }
+public class WebConfig {
  
 }
